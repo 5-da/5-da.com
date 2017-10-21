@@ -32,13 +32,13 @@ body {
 .entry {
   background: white;
   border: solid 1px #e0e0e0;
-  margin: 2.25em 0;
+  margin: 1.5em 0;
 }
 .entry:first-child {
-  margin-top: 6em;
+  margin-top: 0.5em;
 }
 .entry:not(.has-post-thumbnail) {
-  padding-top: 0.75em;
+  padding-top: 0.5em;
 }
 
 .featured-image {
@@ -48,16 +48,16 @@ body {
 }
 
 .post-header {
-  padding: 1.5em 1.5em 0 1.5em;
+  padding: 1em 1em 0 1em;
   margin: 0;
 }
 
 .post-content {
-  padding: 0 1.5em 1.5em 1.5em;
+  padding: 0 1em 1em 1em;
 }
 
 .post-after {
-  padding: 1.5em;
+  padding: 1em;
   margin: 0;
 }
 .post-after:after {
@@ -68,45 +68,45 @@ body {
   margin-bottom: 0;
 }
 .further-reading:before, .further-reading:after {
-  right: -1.5em;
-  left: -1.5em;
+  right: -1em;
+  left: -1em;
   background: #e0e0e0;
 }
 
 @media all and (min-width: 56.25em) {
   .entry:first-child {
-    margin-top: 4.5em;
+    margin-top: 1em;
   }
 
   .post-content {
-    padding: 0 3em 3em 3em;
+    padding: 0 1em 1em 1em;
   }
 
   .post-after {
-    padding: 1.5em 3em;
+    padding: 1em 2em;
+  }
+
+  .further-reading:before, .further-reading:after {
+    right: -2em;
+    left: -2em;
+  }
+}
+@media all and (min-width: 68.75em) {
+  .post-header {
+    margin: 0.5em 0 1.5em;
+  }
+
+  .post-content {
+    padding: 0 1em 1em 1em;
+  }
+
+  .post-after {
+    padding: 1em 3em;
   }
 
   .further-reading:before, .further-reading:after {
     right: -3em;
     left: -3em;
-  }
-}
-@media all and (min-width: 68.75em) {
-  .post-header {
-    margin: 0.75em 0 2.25em;
-  }
-
-  .post-content {
-    padding: 0 4.5em 3em 4.5em;
-  }
-
-  .post-after {
-    padding: 1.5em 4.5em;
-  }
-
-  .further-reading:before, .further-reading:after {
-    right: -4.5em;
-    left: -4.5em;
   }
 }
 .site-header {
@@ -188,7 +188,7 @@ body {
 .loop-pagination a,
 .loop-pagination span {
   display: inline-block;
-  padding: 0.75em 1.5em;
+  padding: 0.5em 1em;
   margin: 0 -4px 0 0;
 }
 .loop-pagination .prev,
@@ -216,7 +216,7 @@ body {
 .archive-header {
   background: white;
   border: solid 1px #e0e0e0;
-  padding: 1.5em;
+  padding: 1em;
   margin-bottom: 0;
 }
 .archive-header h2 {
@@ -247,15 +247,15 @@ body {
   .archive .post-content p:last-of-type,
   .blog .post-content p:last-of-type,
   .search .post-content p:last-of-type {
-    margin: 1.5em 0 0;
+    margin: 1em 0 0;
   }
 }
 .comments {
-  padding: 1.5em;
+  padding: 1em;
 }
 
 .comments-number {
-  margin: 0 0 1.5em;
+  margin: 0 0 1em;
 }
 
 .comment-list {
@@ -263,50 +263,82 @@ body {
 }
 
 .comment-respond {
-  margin: 3em 0;
+  margin: 2em 0;
 }
 
 @media all and (min-width: 56.25em) {
   .comments {
-    padding: 1.5em 3em;
+    padding: 1em 2em;
   }
 }
 @media all and (min-width: 68.75em) {
   .comments {
-    padding: 1.5em 4.5em;
+    padding: 1em 3em;
   }
 }
+.sns ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  display: -webkit-box;
+  display: flex;
+}
 
+.sns li a {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+  text-align: center;
+  border-bottom: none;
+}
 
-.sns {   margin-top : 0;overflow: hidden;}
-.sns ul {margin : 0;
-    padding : 0;
-    list-style : none;
-    text-align: center;
-display:flex;}
-.sns li a {display : block;
-    padding : 10px;
-    color : #fff;
-    font-size : 14px;
-    text-decoration : none;
-    text-align : center;
-border-bottom: none;}
-.sns li a:hover {opacity :0.8;
-    color : #fff;
-border-bottom: none;}
-.sns li a:visited{ color: #fff; border-bottom: none;}
-.sns ul:after {content : "";
-    display : block;
-    clear : both;border-bottom: none;}
-.twitter a{background-color : #55acee;}
-.facebook a{background-color : #315096;}
-.hatebu a{background-color : #008fde;}
+.sns li a:hover {
+  opacity: 0.8;
+  color: #fff;
+  border-bottom: none;
+}
+
+.sns li a:visited {
+  color: #fff;
+  border-bottom: none;
+}
+
+.sns ul:after {
+  content: "";
+  display: block;
+  clear: both;
+  border-bottom: none;
+}
+
+.twitter a {
+  background-color: #55acee;
+}
+
+.facebook a {
+  background-color: #315096;
+}
+
+.hatebu a {
+  background-color: #008fde;
+}
 
 .sns li {
-    width : 100%;
-    margin : 1%;
-    display: inline-block;}
-.sns li a {border-radius:6px;}
+  width: 100%;
+  margin: 1%;
+  display: inline-block;
+}
 
+.sns li a {
+  border-radius: 6px;
+}
 
-/*# sourceMappingURL=style.css.map */
+.alignnone {
+  margin: 0;
+}
+
+.main {
+  padding: 0;
+}

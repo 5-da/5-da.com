@@ -33,7 +33,7 @@ body {
   border: solid 1px #e0e0e0;
   margin: 2.25em 0; }
   .entry:first-child {
-    margin-top: 6em; }
+    margin-top: 1.5em; }
   .entry:not(.has-post-thumbnail) {
     padding-top: 0.75em; }
 
@@ -64,7 +64,7 @@ body {
 
 @media all and (min-width: 56.25em) {
   .entry:first-child {
-    margin-top: 4.5em; }
+    margin-top: 3em; }
 
   .post-content {
     padding: 0 3em 3em 3em; }
@@ -266,5 +266,13 @@ body {
 
 .sns li a {
   border-radius: 6px; }
+
+  .alignnone {
+     margin: 0;
+  }
+
+  .main {
+    padding: 0;
+  }
 
 /*# sourceMappingURL=style.css.map */

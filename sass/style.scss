@@ -1,0 +1,43 @@
+@import "info";
+
+@import "variables";
+
+@import "base";
+
+@import "post";
+
+@import "header";
+
+@import "footer";
+
+@import "archive";
+
+@import "comments";
+.sns ul {margin : 0;
+    padding : 0;
+    list-style : none;
+    text-align: center;
+display:flex;}
+.sns li a {display : block;
+    padding : 10px;
+    color : #fff;
+    font-size : 14px;
+    text-decoration : none;
+    text-align : center;
+border-bottom: none;}
+.sns li a:hover {opacity :0.8;
+    color : #fff;
+border-bottom: none;}
+.sns li a:visited{ color: #fff; border-bottom: none;}
+.sns ul:after {content : "";
+    display : block;
+    clear : both;border-bottom: none;}
+.twitter a{background-color : #55acee;}
+.facebook a{background-color : #315096;}
+.hatebu a{background-color : #008fde;}
+
+.sns li {
+    width : 100%;
+    margin : 1%;
+    display: inline-block;}
+.sns li a {border-radius:6px;}

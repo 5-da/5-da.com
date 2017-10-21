@@ -16,10 +16,3 @@ function ct_unit_enqueue_styles() {
 	);
 }
 add_action( 'wp_enqueue_scripts', 'ct_unit_enqueue_styles' );
-
-function ct_unit_override_footer_text( $footer_text ) {
-	$site_url = 'https://www.competethemes.com/unit/';
-	$footer_text = sprintf( __( '<a href="%s">Unit WordPress Theme</a> by Compete Themes', 'unit' ), esc_url( $site_url ) );
-	return $footer_text;
-}
-add_filter( 'ct_founder_footer_text', 'ct_unit_override_footer_text' );

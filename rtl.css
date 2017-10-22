@@ -27,6 +27,8 @@ It's not recommended to add CSS to this file, as it will be lost if you ever upd
 /***** Silent Classes *****/
 body {
   background: #EDEDED;
+  max-width: 1000px;
+  margin: auto;
 }
 
 .entry {
@@ -336,7 +338,7 @@ body {
 }
 
 .alignnone {
-  margin: 0;
+  margin: 2em 0 0 0;
 }
 
 .main {
